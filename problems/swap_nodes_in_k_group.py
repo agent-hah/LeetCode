@@ -38,7 +38,7 @@ part3.next = part4
 part5 = ListNode(5)
 part4.next = part5
 
-res = reverseKGroup(example_1, 3)
+res = reverseKGroup(example_1, 4)
 
 prn = []
 curr = res
