@@ -17,7 +17,7 @@ def removeNthFromEnd(head: Optional[ListNode], n: int) -> Optional[ListNode]:
     if target == 0:
         return res.next
 
-    def recursion (prev: Optional[ListNode], curr: Optional[ListNode], ticker: int) -> None:
+    def recursion (res, prev: Optional[ListNode], curr: Optional[ListNode], ticker: int) -> None:
         if not curr:
             return
 
@@ -29,9 +29,9 @@ def removeNthFromEnd(head: Optional[ListNode], n: int) -> Optional[ListNode]:
             prev.next = curr.next
             return
         
-        recursion(curr, curr.next, ticker + 1)
+        recursion(res, curr, curr.next, ticker + 1)
     
-    recursion(None, head, 0)
+    recursion(res, None, head, 0)
     return res
 
 example_1 = ListNode(1)
