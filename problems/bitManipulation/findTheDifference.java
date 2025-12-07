@@ -1,4 +1,4 @@
-package problems.bitManipulation;
+package problems.bitmanipulation;
 
 public class findTheDifference {
     public static char method(String s, String t) {
