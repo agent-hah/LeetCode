@@ -13,6 +13,6 @@ def findErrorNums(nums: list[int]) -> list[int]:
 
 print(findErrorNums([1, 2, 2, 4]))
 print(findErrorNums([5,3,6,1,5,4,7,8]))
-nums = [i for i in range(2, 101)]
+nums = [i for i in range(2, 234567890)]
 nums.insert(49, 69)
 print(findErrorNums(nums))
